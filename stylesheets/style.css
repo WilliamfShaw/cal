@@ -1,0 +1,108 @@
+
+.calendar-container {
+  position: fixed;
+  height: 245px;
+  width: 502px;
+  border: 2px solid black;
+  font-family: 'Nixie One', cursive;
+}
+
+.day-view {
+  text-align: center;
+  height: 245px;
+  width: 200px;
+  float: left;
+  border-right: 2px solid black;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ECECEC), to(#F7F7F7));
+
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(bottom, #F7F7F7, #ECECEC);
+
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(bottom, #F7F7F7, #ECECEC);
+
+  /* IE 10 */
+  background: -ms-linear-gradient(bottom, #F7F7F7, #ECECEC);
+
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(bottom, #F7F7F7, #ECECEC);
+}
+
+.day-name {
+  position: relative;
+  height: 35px;
+  color: white;
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F80102), to(#AD0000));
+
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(bottom, #AD0000, #F80102);
+
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(bottom, #AD0000, #F80102);
+
+  /* IE 10 */
+  background: -ms-linear-gradient(bottom, #AD0000, #F80102);
+
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(bottom, #AD0000, #F80102);
+  font-size: 20px;
+}
+
+#full-day-name {
+  padding: 4px;
+  margin-top: 0px;
+}
+
+.day-number {
+  font-size: 45px;
+}
+
+.full-view {
+  height: 240px;
+  width: 300px;
+  float: left;
+}
+
+.day-row {
+  color: red;
+}
+
+[name='selected'] {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F80102), to(#AD0000));
+
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(bottom, #AD0000, #F80102);
+
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(bottom, #AD0000, #F80102);
+
+  /* IE 10 */
+  background: -ms-linear-gradient(bottom, #AD0000, #F80102);
+
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(bottom, #AD0000, #F80102);
+  border: 1px solid black;
+  color: white;
+}
+
+#calendar-table {
+  height: 100%;
+  width: 100%;
+}
+
+#calendar-table th {
+ padding: 5px;
+ text-align: center;
+}
+
+
+#calendar-table td {
+ padding: 5px;
+ text-align: center;
+}
+
+#clicked {
+  background-color: skyblue;
+  border: 1px solid black;
+}
